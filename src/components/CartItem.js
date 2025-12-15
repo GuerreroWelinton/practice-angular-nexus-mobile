@@ -3,17 +3,14 @@ import { Image, Pressable, Text, View } from 'react-native';
 
 export default function CartItem({ item, onUpdateQuantity, onRemove }) {
   const handleDecrease = () => {
-    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
     onUpdateQuantity(item.id, item.quantity - 1);
   };
 
   const handleIncrease = () => {
-    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
     onUpdateQuantity(item.id, item.quantity + 1);
   };
 
   const handleRemove = () => {
-    Haptics.notificationAsync(Haptics.NotificationFeedbackType.Warning);
     onRemove(item.id);
   };
 

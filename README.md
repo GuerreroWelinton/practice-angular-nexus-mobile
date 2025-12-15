@@ -59,7 +59,6 @@ npx expo start
 
 - **Componentes nativos**: SafeAreaView, View, Text, Pressable usados en todas las vistas.
 - **Estilos**: Nativewind en todo el proyecto, StyleSheet solo para casos especiales.
-- **Fuentes**: Google Fonts integradas (si necesitas fuentes locales, agrégalas en assets/fonts).
+- **Fuentes**: Google Fonts integradas.
 - **Retroalimentación háptica**: Implementada con expo-haptics.
 - **API**: Se usa la API simulada de la actividad 1.
-- **Entrega**: Recuerda excluir `node_modules` y adjuntar el video.

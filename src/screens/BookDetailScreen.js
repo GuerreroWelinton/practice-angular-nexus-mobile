@@ -39,8 +39,6 @@ export default function BookDetailScreen() {
   }, [id]);
 
   const handleAddToCart = async () => {
-    await Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
-
     try {
       addToCart(book);
 
@@ -59,8 +57,6 @@ export default function BookDetailScreen() {
   };
 
   const handleBuyNow = async () => {
-    await Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Heavy);
-
     addToCart(book);
 
     Alert.alert('¡Compra realizada! 🛒', `Has comprado "${book.nombre}"`, [

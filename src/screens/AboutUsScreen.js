@@ -6,12 +6,10 @@ import { PRIMARY, WHITE } from '../constants/colors';
 
 export default function AboutUsScreen() {
   const handlePress = (action) => {
-    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
     console.log(`Acción: ${action}`);
   };
 
   const handleOpenLink = (url) => {
-    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
     Linking.openURL(url);
   };
 

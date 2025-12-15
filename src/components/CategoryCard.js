@@ -19,7 +19,6 @@ const categoryColors = {
 
 export default function CategoryCard({ category, onPress }) {
   const handlePress = () => {
-    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
     onPress(category);
   };
 
